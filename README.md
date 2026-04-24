@@ -1,10 +1,10 @@
-# Linux Homelab Journey 🚀
+# Linux Homelab Journey 💻 🇲🇽
 
-This repo documents my hands-on preparation for the LFCS certification using my personal Ubuntu homelab.
+Hands-on preparation for the LFCS certification using a personal Ubuntu homelab.
 
 ## Goals
 - Become confident in Linux system administration
-- Transition towards cloud and DevOps-oriented engineering
+- Transition towards cloud and DevOps-oriented engineering coming from Front → Fullstack background
 
 ## Structure
 Each folder represents one day of practice (~1 hour sessions).
