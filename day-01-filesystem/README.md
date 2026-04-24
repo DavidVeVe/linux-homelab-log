@@ -1,18 +1,45 @@
-
-# Day 01 - Linux Filesystem
+# Day 01 - Filesystem Exploration
 
 ## Objective
-Understand the Linux filesystem structure and where to find key system components.
+Understand Linux filesystem structure and navigate key directories.
 
-## What I Did
-- Explored root directory `/`
-- Navigated through `/etc`, `/var/log`, `/home`, `/proc`
-- Used `find` to locate configuration files
+## What I already knew
+- /etc → config files
+- /var → variable data such as logs, cache, etc...
+- /bin → binaries, basic tools
+- /boot → system starter
+- /lib → common toolbox
+- /dev → physical and virtual devices
+- /tmp → temporary files
+- /proc → live system data
+- /opt → installed external software
+- /home → self workspace
 
 ## Commands Used
 ```bash
+ssh servername
+pwd
+cd /
+whoami
+sudo su -
 ls -la /
-cd /etc
-cd /var/log
+ls bin
+cat /bin/ls
+file /bin/ls
+ls lib64
+file lib64/ld-linux-x86-64.so.2
+ls /lib
+ls /lib/nvidia
+file /lib/nvidia/alternate-install-available
+ls /var/log
+find /var/log -name "*.log"
+cat var/log/bootstrap.log
 cat /proc/cpuinfo
+ls dev/null
+file dev/null
+ls /etc
 find /etc -name "*.conf" 2>/dev/null
+find /etc -name "*.conf" | wc -l
+
+
+Note: Used sudo su - to make exploration easier while learning
